@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<style>
+    h1 {
+        
+    background-color: rgb(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    
+    
+    font: 1em sans-serif;;
+
+    text-align: center;
+    text-transform: capitalize;
+  }
+  body{
+      
+      background-image: url(https://content3.jdmagicbox.com/comp/kolkata/f7/033pxx33.xx33.190307121044.y7f7/catalogue/offbeat-ccu-topsia-kolkata-banquet-halls-tgl5eyg3pw.jpg);
+      background-position: center;
+      background-size: cover;
+      margin:0;
+      padding:0;
+  }
+  .nav ul{
+      list-style: none;
+      background-color: rgb(0,0,0,0.6);
+      
+      text-align: center;
+      
+      padding:5px;
+
+  }
+  .nav li{
+      display:inline-block;
+  }
+  .nav a{
+      text-decoration: none;
+      color: white;
+      width: 100px;
+      display: block;
+      padding: 0  28px;
+      font-size: 17px;
+      font-family: Helvetica;
+      transition: 0.4s;
+  }
+  
+  img{
+    margin-left: 970px ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+ 
+  
+  table{
+      
+      color: white;
+      margin-left: 200px;
+      margin-right: 100px;
+      text-align: center;
+      border-style: double;
+      border-color: rgb(0,0,0,0.6);
+  }
+  form{
+      margin-left: 0px;
+    
+      text-align: center;
+  }
+  *{
+      box-sizing: border-box
+  }
+  .child{
+   
+   border: 1px solid  rgb(0,0,0,0.6) ;
+   float: left;
+   width: 0%;
+  }
+  .parent{
+      display: flex;
+  }
+  .Details{
+    width:800px;
+     background-color: rgb(0,0,0,0.6);
+     margin: auto;
+     color: white;
+     padding: 10px 0px 10px 0px;
+     text-align: center;
+     border-radius: 15;
+  }
+  .main{
+    width:800px;
+     background-color: rgb(0,0,0,0.6);
+     margin: auto;
+     color: white;
+     padding: 10px 0px 10px 10px;
+     text-align: center;
+     border-radius: 15;
+  }
+</style>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1><b>HOSTEL</b></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">HOME    </a></li>
+                <li><a href="About.html">ABOUT   </a></li>
+                <li><a href="rules.html">RULES</a></li>
+                <li><a href="rooms.html">ROOMS   </a></li>
+                <li><a href="register.html">REGISTER </a></li>
+                <li><a href="contact.html">CONTACT </a></li>
+            </ul>
+
+        
+    </div>
+        <form action="registers.php" method='POST'>
+        
+    
+    <section class="parent">
+        <section class="child"> 
+            <div class="Details">
+                <h2>DETAILS</h2>
+              </div>
+              <div class="main">
+           
+                <fieldset>
+                    
+                    <br><label for="Name"><b>Name</b></label><br>
+                    <input type="text"  placeholder="Enter Name" name="fullname" required><br><br>
+
+                    <br><label for="Email"><b>Email</b></label><br>
+                    <input type="email"  placeholder="Enter Email" name="email" required><br><br>
+
+                    <br><label for="Phone number"><b>Phone Number</b></label><br>
+                    <input type="phone_number"  placeholder="Enter Phone number" name="pass" required><br><br>
+
+
+                    <br><label for="Addss"><b>Address</b></label><br>
+                    <input type="text"  placeholder="Enter Address" name="Addss" required><br><br>
+                    
+                      <br><label>Enter your gender</label><br>
+                      <lable for="Gender"><b>Gender:</b></lable>
+          <input type="radio" id="Gender" name="Gender" value ="male" required/>Male
+          <input type="radio" id="Gender" name="Gender" value ="female" required/>Female<br><br>  
+               
+                      
+          
+                <table border=10>  
+                    <tr><th>SHARING_TYPES</th><th>ROOM_TYPE</th><th>PRICE</th></tr>  
+                    <tr><td>TWO_SHARING</td><td>AC</td><td>90,000</td></tr>  
+                    <tr><td>TWO_SHARING</td><td>NON_AC</td><td>80,000</td></tr>  
+                    <tr><td>THREE_SHARING</td><td>AC</td><td>80,000</td></tr> 
+                    <tr><td>THREE_SHARING</td><td>NON_AC</td><td>70,000</td></tr>  
+                    <tr><td>FIVE_SHARING</td><td>AC</td><td>75000</td></tr>  
+                    <tr><td>FIVE_SHARING</td><td>NON_AC</td><td>65000</td></tr>  
+                    </table><br>
+                    <br>
+                    <br>
+                  
+                   <tr>
+                    <td class="tdLabel"><label for="Room Details" class="label" required ><b>Room Details:</b></label><br></td>
+                    <td><select name="Room" Requied id="RoomDetails" style="width:160px" >
+                    <option value="select one"selected disabled hidden >Select one</option>
+                    <option value="Two Sharing" required>TWO SHARING</option>
+                    <option value="Three Sharing" required>THREE SHARING</option>
+                    <option value="Five Sharing" required>FIVE SHARING</option>
+                    </select>
+                    </td>
+                    </tr>
+                    <br>
+                    <br>
+
+                
+                
+                <lable for="ROOM_TYPE"><b>Room Type:</b></lable><br>
+                <input type="radio" id="Roomtype" name="Roomtype" value ="AC" required/>AC
+                <input type="radio" id="Roomtype" name="Roomtype" value ="NON-AC" required/>NON-AC<br>
+            
+                    <br><label>DO YOU NEED LAUNDRY:</label><br>NOTE:For laundry you need to pay 2000 rupees<br>
+                    <lable for="Laundary"><b>Laundry:</b></lable>
+          <input type="radio" id="Laundary" name="services" value ="Yes" required/>Yes
+          <input type="radio" id="Laundary" name="services" value ="No" required/>No<br>
+          <br>
+          <br>
+                 
+                    
+            <input type="submit" name="submit" value="submit" >
+        </fieldset>
+           </form>
+           </div>
+           
+           </section>
+           <section class="child">
+               <img src="https://5.imimg.com/data5/UP/WQ/MY-54757623/hostel-bed-furniture-500x500.jpg"alt="HOSTEL"height="500" width="500" border="10" style="border-color: rgb(0,0,0,0.6); "></img>
+               <img src="https://admin.hostelculture.com/images/photos/01030/gal_hostelculture_546097ddb44249.88294415.jpg"alt="HOSTEL"height="462" width="500" border="10" style="border-color: rgb(0,0,0,0.6); "></img>
+            </section>
+    </section>
+       
+       
+</body>
+    </html>
